@@ -11,6 +11,7 @@ import ColumnTable from '@/challenges/column-table/ColumnTable';
 import Counter from '@/challenges/counter/counter';
 import EmailTemplates from '@/challenges/email-templates/EmailTemplates';
 import ExpenseTracker from '@/challenges/expense-tracker/App';
+import FeedbackModal from '@/challenges/feedback-modal/App';
 import FileExplorer from '@/challenges/file-explorer/App';
 import FoodRecipe from '@/challenges/food-recipe/App';
 import GuessNumber from '@/challenges/guess-number/App';
@@ -57,6 +58,7 @@ import Stepper from '@/challenges/stepper/App';
 import InlineOptions from '@/challenges/inline-options/App';
 import DigitalClock from '@/challenges/7-segment-digital-clock/DigitalClock';
 import NestedComments from '@/challenges/nested-comments/App';
+import MemoryGame from '@/challenges/memory-game';
 
 const reactChallengesMap = {
   'transfer-list': <TransferListApp />,
@@ -74,6 +76,7 @@ const reactChallengesMap = {
   stopwatch: <Stopwatch />,
   progressbar: <ProgressBar />,
   'infinite-scrolling': <InfiniteScrolling />,
+  'feedback-modal': <FeedbackModal />,
   'file-explorer': <FileExplorer />,
   'autocomplete-offline': <AutocompleteOffline />,
   'autocomplete-online': <AutocompleteOnline />,
@@ -115,6 +118,7 @@ const reactChallengesMap = {
   'digital-clock': <DigitalClock />,
   'nested-comments': <NestedComments />,
   '15puzzle': <FifteenPuzzle />,
+  'memory-game': <MemoryGame />,
 };
 
 function Challenge() {
